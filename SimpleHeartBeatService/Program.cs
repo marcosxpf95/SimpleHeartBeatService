@@ -6,7 +6,8 @@ namespace SimpleHeartBeatService
     class Program
     {
         static void Main(string[] args)
-        {
+        {            
+
             var exitCode = HostFactory.Run(x =>
             {
                 x.Service<HeartBeat>(s =>

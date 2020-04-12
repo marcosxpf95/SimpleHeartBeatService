@@ -6,12 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NHibernate" Version="5.2.7" />
-    <PackageReference Include="Topshelf" Version="4.2.1" />
+    <Compile Remove="Domain\Mapping\**" />
+    <EmbeddedResource Remove="Domain\Mapping\**" />
+    <None Remove="Domain\Mapping\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Domain\Mapping\" />
+    <PackageReference Include="NHibernate" Version="5.2.7" />
+    <PackageReference Include="Topshelf" Version="4.2.1" />
   </ItemGroup>
 
 </Project>
