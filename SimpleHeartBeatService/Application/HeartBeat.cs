@@ -14,9 +14,9 @@ namespace SimpleHeartBeatService
 
         public HeartBeat()
         {
-            _timer = new Timer(3600000) { AutoReset = true };
+            _timer = new Timer(600) { AutoReset = true };
             _timer.Elapsed += TimerElapsed;
-        }
+        }     
 
         private void TimerElapsed(object sender, ElapsedEventArgs e)
         {       
